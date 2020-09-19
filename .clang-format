@@ -1,0 +1,12 @@
+---
+BasedOnStyle: Google
+IndentWidth: 2
+---
+Language: Cpp
+AlignConsecutiveAssignments: true
+AllowShortFunctionsOnASingleLine: true
+AllowShortBlocksOnASingleLine: false
+ColumnLimit: 90
+---
+Language: Proto
+ColumnLimit: 100
