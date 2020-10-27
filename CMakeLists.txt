@@ -18,3 +18,14 @@ message(STATUS "Use OpenCV ${OpenCV_VERSION}")
 
 add_subdirectory(calibration)
 add_subdirectory(tools)
+
+# +-------------------+
+# | Installation      |
+# +-------------------+
+
+install(DIRECTORY calibration/
+    DESTINATION include/calibration
+    FILES_MATCHING PATTERN "*.h")
+
+install(TARGETS checker_board calibration_result calibrator
+    DESTINATION lib/)
